@@ -3,15 +3,15 @@ import whisper
 import numpy as np
 import torch
 
-video_path = r"C:\Users\qrq4\Downloads\ai model\480p2.mp4"
-output_path = r"C:\Users\qrq4\Downloads\ai model\480p2_captions.srt"
+video_path = r"your video path"
+output_path = r"sub location captions.srt"
 
 # Load the video and extract the audio
 video = mp.VideoFileClip(video_path)
 audio = video.audio
 
 # Write the audio to a file
-audio_path = r"C:\Users\qrq4\Downloads\ai model\480p2_audio.wav"
+audio_path = r"a path for audio"
 audio.write_audiofile(audio_path)
 
 try:
